@@ -74,8 +74,8 @@ const orm = {
     },
 
 
-    updateOne : function(table, objColVals, condition, cb) {
-        let queryString = "UPDATE " + table;
+    update: function(table, objColVals, condition, cb) {
+        var queryString = "UPDATE " + table;
     
         queryString += " SET ";
         queryString += objToSql(objColVals);
@@ -90,7 +90,7 @@ const orm = {
     
           cb(result);
         });
-    },
+      },
     delete: function(table, condition, cb) {
         var queryString = "DELETE FROM " + table;
         queryString += " WHERE ";
