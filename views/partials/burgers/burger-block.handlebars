@@ -1,14 +1,18 @@
 <li>
 	{{burger_name}}
-{{!-- 
+	{{!-- 
 	<button class="change-eaten" data-id="{{id}}" data-neweaten="{{burger_eaten}}">
 		{{#if burger_eaten}}DEVOUR BURGER!{{else}}VOMIT BURGER and enjoy it again{{/if}}
 	</button> --}}
 
 
-	<button class="change-eaten" data-id="{{id}}" data-neweaten="{{burger_eaten}}">
-		{{#if burger_eaten}}DEVOUR BURGER!{{else}}VOMIT BURGER and enjoy it again{{/if}}
+	<button class="btn btn-success change-eaten" data-id="{{id}}" data-neweaten="{{burger_eaten}}">
+		{{#if burger_eaten}}DEVOUR!
+		{{else}}Remove from tummy.
+		{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+
+
+	<button class="btn btn-danger delete-burger" data-id="{{this.id}}">Delete</button>
 </li>

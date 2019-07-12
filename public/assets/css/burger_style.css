@@ -1,3 +1,10 @@
-body {
-    background-color: aqua;
+.jumbotron {
+    background-image: URL("../images/burger.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right center; 
+}
+
+.btn {
+    margin-bottom: 5px;
 }
